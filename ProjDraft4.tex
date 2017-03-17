@@ -1,0 +1,73 @@
+\documentclass[draft]{article}
+%Packages
+\usepackage{graphicx}
+\usepackage{color}
+
+%Useful
+\graphicspath{ {/home/elliotcharlton/Project/Images} }
+\title {Physics Project Draft}
+\author{Elliott G Charlton - 18213621}
+
+%Defined Commands
+\newcommand{\pra}{\medskip\\}
+\newcommand{\edit}[1]{\color{red}\textsl{#1}}
+
+\begin{document}
+	\begin{titlepage}
+	\begin{center}
+	\vspace*{\fill}
+	{\Huge\textbf{ Low-frequency studies of millisecond-pulsars}} \\
+	\bigskip\bigskip {\LARGE Elliott G Charlton} \\
+	\bigskip {\LARGE 18213621}\\
+		\vspace*{\fill}
+	\end{center}
+\bigskip\bigskip\bigskip\vspace{\fill}{\Large\textbf{Absract}} \pra 
+Abstract text here. DummyText Lorem ipsum dolor sit amet, 	consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+			
+	\end{titlepage}
+
+\maketitle
+\tableofcontents{}
+
+\newpage
+\section{Introduction- \color{red} introductary information to bring people up to speed on previous science and concepts that will be touched up in the paper}
+\subsection{Introduction to Pulsars}
+\subsection{Millisecond-Pulsars}
+\subsection{The Murchison Wildfield Array (MWA)}
+
+The Murchison Widefield Array (MWA) is an array made up 128 tiles where one tile is made up of sixteen dual polarization dipoles arranged into a 4x4 grid,1.1m apart underneath the dipoles lays a 5x5m mesh screen. Each tile is connected to a Analog beamformer.
+\begin{center}
+\includegraphics[scale=1]{Tile.jpeg} 
+\end{center}
+Beamforming is a signal processing technique which adds delays to each signal received so that they all line up to form one beam for the associated tile. The beamformer produces two signals in X and Y direction  which are sent to the receiver (Tingay, et al. 2013). \pra
+he incoming signal from the MWA is processed by a dedicated data processing pipeline; however the original imaging pipeline (which produces a string of complex numbers called “visibilities”) did not give useful data products for observing pulsars. A system was implemented to split off and record to disk the tile voltages at an early stage of the pipeline which can be further processed offline. This is called the Voltage Capture System (VCS). The VCS gives an observable bandwidth of 30.72MHz with 24*1.28 MHz sub-bands and has a range of 80-300MHz (Tremblay et al. 2015). \pra
+Once data on the VCS has been recorded there are two options with which to process data, called Coherent and Incoherent beamforming. The incoherent beam has a field of view (FoV) of roughly 30 degrees. This is processed by taking all of the signals and summing them, the sensitivity for a single tile is increased by Sqrt(N) where N is the total number of tiles. A Coherent beam has very narrow FoV roughly 2 arc minutes. This is done by adding the signals from each tile before detection and increases sensitivity by a factor of N. Each type of processing has its advantages. \pra
+The coherent beam is better for single observations of pulsars due to its increased sensitivity. The incoherent beams larger FoV allows it to be better suited to surveying larger portions of the sky. \pra
+
+
+\subsection{MWAs Pulsar Science??}
+
+
+
+\section{Observational data - \edit{Initial data recieved, where it came from, problems/issues}}
+
+\section{Data Processing - \edit{How the data was processed, programs and techniques used}}
+\subsection{Dedispersion}
+
+
+\section{Results \edit{The results will be compared against other higher frequency data and against the expected outcome}}
+\subsection{Interpretation of Results}
+\subsection{Comparison to High Frequency Results}
+
+\section{Discussion \edit{How the results change what we know, or support/appose current knowledge}}
+
+\section{Future Work \edit{Future work to be done in second semester, what improvements would be made to process previously used}}
+
+\section{References}
+
+
+
+
+
+
+\end{document}
